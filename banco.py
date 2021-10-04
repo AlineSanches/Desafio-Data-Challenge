@@ -1,7 +1,7 @@
 from IPython.display import display
 import pandas as pd
 base_dados = pd.read_csv(
-    'C:/Users/fredm/OneDrive/Área de Trabalho/Data-Challenge/sales_20_21_train.csv')
+    './sales_20_21_train.csv')
 
 # Mostrando todos os dados de um Cliente Específico
 cliente_especifico = base_dados["ID_CLIENTE"] == 0
@@ -24,7 +24,7 @@ produtosTotais = base_dados[["ID_CLIENTE", "QTD_SKU"]].groupby(
     "ID_CLIENTE").sum()
 
 
-# display(base_dados.loc[cliente_especifico])
+display(base_dados.loc[cliente_especifico])
 # display(cliente_especifico2)
 # display(valorTotal)
 # display(mediaProdutos)
