@@ -51,7 +51,7 @@ mediaValorGasto = dt_filtrado[["ID_CLIENTE", "VALOR_x"]
                              ].groupby("ID_CLIENTE").mean()
 df['MEDIA VALOR'] = mediaValorGasto
 df['ID_CLIENTE'] = df.index
-df["VALOR"] = df["FREQ PERÍODO"] * df['MEDIA VALOR']
+df["VALOR"] = df["FREQ PERÍODO"] * df['MEDIA VALOR'] / 4
 
 #display(df)
 
