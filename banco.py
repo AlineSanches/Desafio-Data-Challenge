@@ -83,7 +83,7 @@ df_final['ID_CLIENTE'] = df_final.index
 # display(df_final)
 
 # Fazendo o cálculo do LTV em uma nova coluna "VALOR"
-df_final["VALOR"] = df_final["FREQ PERIODO"] * df_final['MEDIA VALOR'] / 4.1
+df_final["VALOR"] = df_final["FREQ TOTAL"] * df_final['MEDIA VALOR'] / 4.1
 # display(df_final)
 
 # Excluindo as colunas de frequência e média do valor das compras para combinar com o arquivo de submissão
